@@ -1,0 +1,19 @@
+{
+  "name": "s3sampl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodedeployAWS/aws-codedeploy-github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodedeployAWS/aws-codedeploy-github/issues"
+  },
+  "homepage": "https://github.com/CodedeployAWS/aws-codedeploy-github#readme"
+}
