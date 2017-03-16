@@ -1,0 +1,22 @@
+machine:
+  node:
+    version: 6.9.4
+
+test:
+  override:
+    - npm test
+
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      CodeDeployDemo:
+        application_root: /
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: uphere-bucket
+            key_pattern: CodedeployAWS/aws-codedeploy-github-{BRANCH}-{SHORT_COMMIT}
+        region: ap-northeast-2
+        deployment_group: CodeDeployGroup
+        deployment_config: CodeDeployDefault.AllAtOnce
